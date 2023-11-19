@@ -79,10 +79,10 @@ def images_to_pdf(directory):
     abs_path = os.path.abspath(directory)
     name = os.path.basename(os.path.dirname(abs_path))
     output_folder = '/Users/shuxingfang/Downloads'
-    pdf_filename = os.path.join(output_folder, f'{name}.pdf')
+    pdf_path = os.path.join(output_folder, f'{name}.pdf')
 
     try:
-        with open(pdf_filename, "wb") as f:
+        with open(pdf_path, "wb") as f:
             f.write(img2pdf.convert(images))
     except Exception as e:
         print(f"An error occurred: {e}")

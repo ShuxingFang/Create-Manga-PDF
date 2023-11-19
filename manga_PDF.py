@@ -4,7 +4,7 @@ import sys
 import img2pdf
 import shutil
 import cv2
-
+#The plan is to make this the ultimate one step PDF manga maker
 
 # Step 1: delete any png in the folder
 def delete_png(directory):

@@ -77,7 +77,7 @@ def images_to_pdf(directory):
     images.sort(key=lambda x: int(x.split('.')[0]))
     images = [os.path.join(directory, f) for f in images]
     abs_path = os.path.abspath(directory)
-    name = os.path.dirname(abs_path)
+    name = os.path.basename(os.path.dirname(abs_path))
     output_folder = '/Users/shuxingfang/Downloads'
     pdf_filename = os.path.join(output_folder, f'{name}.pdf')
 

@@ -109,7 +109,7 @@ if __name__ == "__main__":
         temp = os.path.join(directory, 'temporary')
         os.makedirs(temp, exist_ok=True)
 
-        delete_png(directory)
+        #delete_png(directory)
         merge_images(directory)
         images_to_pdf(temp)
         shutil.rmtree(temp)
